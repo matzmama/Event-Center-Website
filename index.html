@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Silver Crest Estates | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Silver Crest Estates</div>
+
+      <!-- CSS-ONLY HAMBURGER -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul id="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="spaces.html">The Estate</a></li>
+        <li><a href="#contact">Booking</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Where unforgettable nights are made.</h1>
+      <p>Welcome to Silver Crest Estates! An elegant mountain estate where timeless weddings and intimate gatherings unfold.</p>
+      <a href="#contact" class="btn">Book an event</a>
+    </div>
+   
+  </section>
+
+  <section aria-labelledby="featured-events-heading">
+    <h2 id="featured-events-heading">Featured upcoming events</h2>
+    <p>Here are a few highlights from our upcoming schedule.</p>
+
+    <div class="events-grid">
+      <article class="event-card">
+        <h3>The Thompson and Keating Wedding</h3>
+        <p><strong>Date:</strong> January 10</p>
+        <p><strong>Type:</strong> Wedding</p>
+        <p>Come celebrate Terry and Sarah as they tie the knot.</p>
+        <a href="events.html#schedule-section" class="btn">View schedule</a>
+      </article>
+
+      <article class="event-card">
+        <h3>Tech Horizons Conference</h3>
+        <p><strong>Date:</strong> February 3–5</p>
+        <p><strong>Type:</strong> Conference</p>
+        <p>Three days of keynotes, workshops, and networking.</p>
+        <a href="events.html" class="btn">View details</a>
+      </article>
+
+      <article class="event-card">
+        <h3>Silver Crest Estates Wedding Showcase</h3>
+        <p><strong>Date:</strong> March 21</p>
+        <p><strong>Type:</strong> Expo</p>
+        <p>Tour decorated spaces and meet vendors.</p>
+        <a href="spaces.html" class="btn">Explore the venue</a>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="pricing-heading">
+    <h2 id="pricing-heading">Sample event packages</h2>
+    <p>These sample packages give a starting point for planning.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Package</th>
+          <th>Event Type</th>
+          <th>Duration</th>
+          <th>Starting Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Weekend Essentials</td>
+          <td>Private Celebrations</td>
+          <td>3 Days</td>
+          <td>$3,000</td>
+        </tr>
+        <tr>
+          <td>Conference Day</td>
+          <td>Conference</td>
+          <td>8 hours</td>
+          <td>$4,500</td>
+        </tr>
+        <tr>
+          <td>Signature Wedding</td>
+          <td>Wedding</td>
+          <td>10 hours</td>
+          <td>$6,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Booking inquiries</h2>
+    <p>Ready to start planning? Share a few details below.</p>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Full name</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="event-type">Event type</label>
+        <input type="text" id="event-type" placeholder="Wedding, retreat, etc.">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Tell us about your event</label>
+        <textarea id="message"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Submit inquiry</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.twitter.com" target="_blank">X (Twitter)</a>
+    </div>
+    <p>&copy; 2025 Silver Crest Estates. All rights reserved.</p>
+  </div>
+  <a href="#top" id="back-to-top">Back to top</a>
+</footer>
+
+</body>
+</html>
+

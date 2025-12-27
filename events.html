@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Silver Crest Estates | Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Silver Crest Estates</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="index.html#contact">Booking</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- SCROLL BUTTON -->
+    <div class="scroll-button">
+      <a href="#schedule-section">↓ View Upcoming Events</a>
+    </div>
+
+    <!-- EVENT IMAGE WITH SCROLL FADE -->
+    <div class="event-image scroll-fade">
+      <img src="images/NeutralEvent.png" alt="Retreat setup at Silver Crest Estates">
+    </div>
+
+    <section id="schedule-section" aria-labelledby="events-heading">
+      <h1 id="events-heading">Event Schedule</h1>
+      <p>Browse this month’s events at Silver Crest Estates. Times are listed in local time.</p>
+
+      <table id="schedule">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Type</th>
+            <th>Time</th>
+            <th>Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January 10</td>
+            <td>Thompson/Keating Wedding Ceremony</td>
+            <td>Wedding</td>
+            <td>3:00 PM – 9:00 PM</td>
+            <td>Great Hall</td>
+          </tr>
+          <tr>
+            <td>February 3</td>
+            <td>Tech Horizons Retreat – Day 1</td>
+                    <td>Coporate Retreat</td>
+            <td>9:00 AM – 5:30 PM</td>
+            <td>Lodge & Lounge</td>
+          </tr>
+          <tr>
+            <td>February 4</td>
+            <td>Tech Horizons Retreat – Day 2</td>
+            <td>Corporate Retreat</td>
+            <td>9:00 AM – 5:30 PM</td>
+            <td>Lodge & Lounge</td>
+          </tr>
+          <tr>
+            <td>February 5</td>
+            <td>Tech Horizons Retreat – Day 3</td>
+            <td>Corporate Retreat</td>
+            <td>9:00 AM – 5:30 PM</td>
+            <td>Lodge & Lounge</td>
+          </tr>
+          <tr>
+            <td>March 21</td>
+            <td>Silver Crest Estates Wedding Expo</td>
+            <td>Showcase</td>
+            <td>11:00 AM – 4:00 PM</td>
+            <td>Great Hall</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="types-heading">
+      <h2 id="types-heading">Types of Events We Host</h2>
+      <p>Silver Crest Estates is designed to support a wide range of meaningful gatherings:</p>
+      <ul>
+        <li>Weddings, receptions, and vow renewals.</li>
+        <li>Corporate retreats, workshops, and team-building sessions.</li>
+        <li>Wellness retreats, mindfulness sessions, and creative workshops.</li>
+        <li>Community gatherings, showcases, and private celebrations.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Want to Host Your Event Here?</h2>
+      <p>Reach out with your idea and we’ll help you design the experience.</p>
+      <a href="index.html#contact" class="btn">Start a Booking Request</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">X (Twitter)</a>
+      </div>
+      <p>&copy; 2025 . Silver Crest Estates All rights reserved.</p>
+    </div>
+    <a href="#top" id="back-to-top">Back to top</a>
+  </footer>
+
+  <!-- SCROLL FADE SCRIPT -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.scroll-fade').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
+

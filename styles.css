@@ -1,0 +1,291 @@
+/* ============================
+   GLOBAL
+   ============================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* ============================
+   LAYOUT
+   ============================ */
+header {
+  background: linear-gradient(135deg, #1b2a4a, #3a1563);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 2rem 0 4rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+footer {
+  background: #050814;
+  color: #aaa;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ============================
+   NAVIGATION (CSS-ONLY HAMBURGER)
+   ============================ */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+/* Desktop nav */
+#nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+#nav-menu a {
+  color: #f5f5f5;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav-menu a:hover,
+#nav-menu a:focus {
+  background-color: #f5f5f5;
+  color: #1b2a4a;
+}
+
+/* ============================
+   RESPONSIVE NAV (CSS ONLY)
+   ============================ */
+@media (max-width: 1024px) {
+
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Collapse menu */
+  #nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #1b2a4a;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  /* Expand menu when checkbox is checked */
+  #menu-toggle:checked ~ #nav-menu {
+    max-height: 500px;
+  }
+
+  /* Animate hamburger into X */
+  #menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* ============================
+   HERO (HOME)
+   ============================ */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  background-image: url('images/Ranch.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-text {
+  flex: 1 1 280px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image {
+  flex: 1 1 280px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================
+   ESTATE HERO
+   ============================ */
+.estate-hero {
+  background-image: url('images/Weddingtable.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.estate-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* ============================
+   BUTTONS
+   ============================ */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  background: #ff4f81;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #ff6b99;
+  transform: translateY(-1px);
+}
+
+/* ============================
+   ESTATE CARD GRID
+   ============================ */
+.space-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.space-card {
+  position: relative;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.space-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+.space-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.space-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.space-card:hover .space-overlay {
+  opacity: 1;
+}
+
+/* ============================
+   RESPONSIVE GRID
+   ============================ */
+@media (max-width: 1024px) {
+  .space-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .space-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
