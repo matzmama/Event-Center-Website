@@ -2,139 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Silver Crest Estates | Events</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta name="description" content="A closer look at upcoming events and the gatherings that find their place at Silver Crest Estates.">
+  <title>Gatherings | Silver Crest Estates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="images/silver-crest-mark.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body id="top">
-  <header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
     <div class="container">
-      <nav>
-        <div class="logo">Silver Crest Estates</div>
-        <ul>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Silver Crest Estates home">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-name">Silver Crest <span>Estates</span></span>
+        </a>
+        <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation">
+        <label for="menu-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+        <ul id="nav-menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="index.html#contact">Booking</a></li>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="events.html" class="active" aria-current="page">Gatherings</a></li>
+          <li><a href="spaces.html">The estate</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Plan your visit <span aria-hidden="true">↗</span></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-
-    <!-- SCROLL BUTTON -->
-    <div class="scroll-button">
-      <a href="#schedule-section">↓ View Upcoming Events</a>
-    </div>
-
-    <!-- EVENT IMAGE WITH SCROLL FADE -->
-    <div class="event-image scroll-fade">
-      <img src="images/NeutralEvent.png" alt="Retreat setup at Silver Crest Estates">
-    </div>
-
-    <section id="schedule-section" aria-labelledby="events-heading">
-      <h1 id="events-heading">Event Schedule</h1>
-      <p>Browse this month’s events at Silver Crest Estates. Times are listed in local time.</p>
-
-      <table id="schedule">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Event</th>
-            <th>Type</th>
-            <th>Time</th>
-            <th>Room</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>January 10</td>
-            <td>Thompson/Keating Wedding Ceremony</td>
-            <td>Wedding</td>
-            <td>3:00 PM – 9:00 PM</td>
-            <td>Great Hall</td>
-          </tr>
-          <tr>
-            <td>February 3</td>
-            <td>Tech Horizons Retreat – Day 1</td>
-                    <td>Coporate Retreat</td>
-            <td>9:00 AM – 5:30 PM</td>
-            <td>Lodge & Lounge</td>
-          </tr>
-          <tr>
-            <td>February 4</td>
-            <td>Tech Horizons Retreat – Day 2</td>
-            <td>Corporate Retreat</td>
-            <td>9:00 AM – 5:30 PM</td>
-            <td>Lodge & Lounge</td>
-          </tr>
-          <tr>
-            <td>February 5</td>
-            <td>Tech Horizons Retreat – Day 3</td>
-            <td>Corporate Retreat</td>
-            <td>9:00 AM – 5:30 PM</td>
-            <td>Lodge & Lounge</td>
-          </tr>
-          <tr>
-            <td>March 21</td>
-            <td>Silver Crest Estates Wedding Expo</td>
-            <td>Showcase</td>
-            <td>11:00 AM – 4:00 PM</td>
-            <td>Great Hall</td>
-          </tr>
-        </tbody>
-      </table>
+  <main id="main-content">
+    <section class="page-hero events-hero" aria-labelledby="page-heading">
+      <div class="page-hero-shade"></div>
+      <div class="container page-hero-content">
+        <p class="eyebrow eyebrow-light"><span></span> Come together, beautifully</p>
+        <h1 id="page-heading">Good things<br><em>happen when we gather.</em></h1>
+        <p>Weddings, retreats, and the in-between occasions that deserve a little more room to breathe.</p>
+        <a href="#schedule-section" class="button button-light">Explore the calendar <span aria-hidden="true">↓</span></a>
+      </div>
     </section>
 
-    <section aria-labelledby="types-heading">
-      <h2 id="types-heading">Types of Events We Host</h2>
-      <p>Silver Crest Estates is designed to support a wide range of meaningful gatherings:</p>
-      <ul>
-        <li>Weddings, receptions, and vow renewals.</li>
-        <li>Corporate retreats, workshops, and team-building sessions.</li>
-        <li>Wellness retreats, mindfulness sessions, and creative workshops.</li>
-        <li>Community gatherings, showcases, and private celebrations.</li>
-      </ul>
+    <section class="schedule-section section-pad" id="schedule-section" aria-labelledby="schedule-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> At Silver Crest</p>
+            <h2 id="schedule-heading">A calendar of moments.</h2>
+          </div>
+          <p class="section-heading-note">A few of the gatherings taking place at the estate. All times are local.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr><th scope="col">Date</th><th scope="col">Gathering</th><th scope="col">Occasion</th><th scope="col">Time</th><th scope="col">Setting</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>January 10, 2027</td><td>Thompson &amp; Keating Wedding</td><td>Wedding</td><td>3:00–9:00 PM</td><td>Great Hall</td></tr>
+              <tr><td>February 3, 2027</td><td>Tech Horizons Retreat · Day 1</td><td>Corporate retreat</td><td>9:00 AM–5:30 PM</td><td>Lodge &amp; Lounge</td></tr>
+              <tr><td>February 4, 2027</td><td>Tech Horizons Retreat · Day 2</td><td>Corporate retreat</td><td>9:00 AM–5:30 PM</td><td>Lodge &amp; Lounge</td></tr>
+              <tr><td>February 5, 2027</td><td>Tech Horizons Retreat · Day 3</td><td>Corporate retreat</td><td>9:00 AM–5:30 PM</td><td>Lodge &amp; Lounge</td></tr>
+              <tr><td>March 21, 2027</td><td>Silver Crest Wedding Showcase</td><td>Showcase</td><td>11:00 AM–4:00 PM</td><td>Great Hall</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">Event details shown for illustrative purposes.</p>
+      </div>
     </section>
 
-    <section aria-labelledby="cta-heading">
-      <h2 id="cta-heading">Want to Host Your Event Here?</h2>
-      <p>Reach out with your idea and we’ll help you design the experience.</p>
-      <a href="index.html#contact" class="btn">Start a Booking Request</a>
+    <section class="event-types-section section-pad" id="event-types" aria-labelledby="types-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Make it your own</p>
+            <h2 id="types-heading">Your reason to gather.</h2>
+          </div>
+          <p class="section-heading-note">Bring your people, your plans, or simply the beginning of an idea.</p>
+        </div>
+        <div class="event-type-grid">
+          <article class="event-type-card"><span>01</span><h3>Weddings &amp; celebrations</h3><p>From a sunlit ceremony to a long evening around the table.</p></article>
+          <article class="event-type-card"><span>02</span><h3>Corporate retreats</h3><p>Fresh air, thoughtful spaces, and room to see things differently.</p></article>
+          <article class="event-type-card"><span>03</span><h3>Wellness &amp; workshops</h3><p>A quieter setting for new ideas, shared practice, and a little reset.</p></article>
+          <article class="event-type-card"><span>04</span><h3>Private gatherings</h3><p>Milestones, reunions, and the just-because days worth remembering.</p></article>
+        </div>
+      </div>
     </section>
 
+    <section class="closing-cta section-pad">
+      <div class="container closing-cta-inner">
+        <div>
+          <p class="eyebrow eyebrow-light"><span></span> Imagine it here</p>
+          <h2>Let's make room<br>for <em>your moment.</em></h2>
+        </div>
+        <a href="index.html#contact" class="button button-light">Start a booking inquiry <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="container">
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">Silver Crest <span>Estates</span></span>
+      </a>
+      <p>A little closer to what matters.</p>
       <div class="footer-links">
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        <a href="https://www.twitter.com" target="_blank">X (Twitter)</a>
+        <a href="about.html">Our story</a>
+        <a href="events.html">Gatherings</a>
+        <a href="spaces.html">The estate</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms &amp; conditions</a>
+        <a href="#top">Back to top ↑</a>
       </div>
-      <p>&copy; 2025 . Silver Crest Estates All rights reserved.</p>
+      <div class="footer-social">
+        <span>Follow along</span>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+      </div>
     </div>
-    <a href="#top" id="back-to-top">Back to top</a>
+    <div class="container footer-bottom">
+      <span>© 2026 Jasmine Mathisen</span>
+      <span>Silver Crest Estates is a fictional venue concept created for portfolio purposes.</span>
+    </div>
   </footer>
-
-  <!-- SCROLL FADE SCRIPT -->
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    });
-
-    document.querySelectorAll('.scroll-fade').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
-
+  <a class="back-to-top-button" href="#top"><span aria-hidden="true">↑</span><span>Back to top</span></a>
 </body>
 </html>
-

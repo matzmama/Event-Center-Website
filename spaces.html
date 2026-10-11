@@ -2,105 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Estate | Silver Crest Estates</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the great hall, lodge, lakeview room, and mountain cabins at Silver Crest Estates.">
+  <title>The Estate | Silver Crest Estates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="images/silver-crest-mark.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body id="top">
-
-<header>
-  <div class="container">
-    <nav>
-      <div class="logo">Silver Crest Estates</div>
-
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="hamburger">
-        <span></span><span></span><span></span>
-      </label>
-
-      <ul id="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="spaces.html" class="active">The Estate</a></li>
-        <li><a href="index.html#contact">Booking</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-  <section class="estate-hero">
-    <div class="estate-overlay">
-      <a href="#estate-content" class="btn">Explore the Estate</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Silver Crest Estates home">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-name">Silver Crest <span>Estates</span></span>
+        </a>
+        <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation">
+        <label for="menu-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="events.html">Gatherings</a></li>
+          <li><a href="spaces.html" class="active" aria-current="page">The estate</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Plan your visit <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <div id="estate-content" class="container">
+  <main id="main-content">
+    <section class="page-hero estate-hero" aria-labelledby="page-heading">
+      <div class="page-hero-shade"></div>
+      <div class="container page-hero-content">
+        <p class="eyebrow eyebrow-light"><span></span> Find your place here</p>
+        <h1 id="page-heading">A little room<br><em>to make it yours.</em></h1>
+        <p>Open air, fireside warmth, and spaces that bring everyone closer.</p>
+        <a href="#estate-content" class="button button-light">Explore the estate <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
 
-    <p>Silver Crest Estates offers a curated collection of indoor and outdoor spaces...</p>
+    <section class="estate-section section-pad" id="estate-content" aria-labelledby="estate-heading">
+      <div class="container">
+        <div class="section-heading estate-heading">
+          <div>
+            <p class="eyebrow"><span></span> Inside &amp; out</p>
+            <h2 id="estate-heading">Space for every kind of together.</h2>
+          </div>
+          <p class="section-heading-note">Gather close, spread out, and settle in. Each space has its own way of making a moment feel like yours.</p>
+        </div>
 
-    <div class="space-grid">
+        <div class="space-grid">
+          <article class="space-card space-card-large">
+            <img src="images/Great-Halll.png" alt="The Great Hall, ready to welcome a celebration" loading="lazy">
+            <div class="space-overlay"><span>01 / Gather</span><h3>The Great Hall</h3><p>A welcoming setting for your biggest moments.</p></div>
+          </article>
+          <article class="space-card">
+            <img src="images/LakeView-Room.png" alt="The light-filled Lakeview Room" loading="lazy">
+            <div class="space-overlay"><span>02 / Take it in</span><h3>The Lakeview Room</h3><p>Bright, open, and made for a change of pace.</p></div>
+          </article>
+          <article class="space-card">
+            <img src="images/Lodge-Lounge.png" alt="The comfortable Lodge and Lounge" loading="lazy">
+            <div class="space-overlay"><span>03 / Settle in</span><h3>The Lodge &amp; Lounge</h3><p>A cozy place to linger a little longer.</p></div>
+          </article>
+          <article class="space-card">
+            <img src="images/Luxary Cabin.png" alt="A private cabin tucked into the estate" loading="lazy">
+            <div class="space-overlay"><span>04 / Stay awhile</span><h3>Luxury Cabins</h3><p>A quiet retreat at the end of a full day.</p></div>
+          </article>
+          <article class="space-card">
+            <img src="images/Smaller Cabins.png" alt="Guest cabins among the trees" loading="lazy">
+            <div class="space-overlay"><span>05 / Make yourself at home</span><h3>Guest Cabins</h3><p>Eight additional cabins for an easy overnight stay.</p></div>
+          </article>
+        </div>
+        <p class="table-note">Availability and event capacity vary by space. Get in touch to find the right fit.</p>
+      </div>
+    </section>
 
-      <div class="space-card">
-        <img src="images/Great-Halll.png" alt="Great Hall">
-        <div class="space-overlay">
-          <h3>The Great Hall</h3>
-          <p>Our primary gathering space.</p>
+    <section class="estate-note-section">
+      <div class="container estate-note">
+        <img src="images/Weddingtable.png" alt="An intimate event table set among the estate's natural surroundings" loading="lazy">
+        <div>
+          <p class="eyebrow"><span></span> A setting to remember</p>
+          <h2>Come for the gathering.<br><em>Stay for everything around it.</em></h2>
+          <p>From the first welcome to a slow morning in the mountains, Silver Crest is a place to make more of the time you spend together.</p>
+          <a href="index.html#contact" class="text-link">Plan your stay <span aria-hidden="true">→</span></a>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="space-card">
-        <img src="images/LakeView-Room.png" alt="Lakeview Room">
-        <div class="space-overlay">
-          <h3>The Lakeview Room</h3>
-          <p>Bright and scenic.</p>
-        </div>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">Silver Crest <span>Estates</span></span>
+      </a>
+      <p>A little closer to what matters.</p>
+      <div class="footer-links">
+        <a href="about.html">Our story</a>
+        <a href="events.html">Gatherings</a>
+        <a href="spaces.html">The estate</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms &amp; conditions</a>
+        <a href="#top">Back to top ↑</a>
       </div>
-
-      <div class="space-card">
-        <img src="images/Lodge-Lounge.png" alt="Lodge & Lounge">
-        <div class="space-overlay">
-          <h3>The Lodge & Lounge</h3>
-          <p>Cozy and intimate.</p>
-        </div>
+      <div class="footer-social">
+        <span>Follow along</span>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
       </div>
-
-      <div class="space-card">
-        <img src="images/Luxary Cabin.png" alt="Luxury Cabins">
-        <div class="space-overlay">
-          <h3>Luxury Cabins</h3>
-          <p>Restored cabins for overnight stays.</p>
-        </div>
-      </div>
-
-      <div class="space-card">
-        <img src="images/Smaller Cabins.png" alt="Additional Cabins">
-        <div class="space-overlay">
-          <h3>Additional Cabins</h3>
-          <p>Eight additional guest cabins.</p>
-        </div>
-      </div>
-
     </div>
-  </div>
-
-</main>
-
-<footer>
-  <div class="container">
-    <div class="footer-links">
-      <a href="https://www.instagram.com" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      <a href="https://www.twitter.com" target="_blank">X (Twitter)</a>
+    <div class="container footer-bottom">
+      <span>© 2026 Jasmine Mathisen</span>
+      <span>Silver Crest Estates is a fictional venue concept created for portfolio purposes.</span>
     </div>
-    <p>&copy; 2025 Silver Crest Estates. All rights reserved.</p>
-  </div>
-  <a href="#top" id="back-to-top">Back to top</a>
-</footer>
-
+  </footer>
+  <a class="back-to-top-button" href="#top"><span aria-hidden="true">↑</span><span>Back to top</span></a>
 </body>
 </html>
-

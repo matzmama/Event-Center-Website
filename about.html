@@ -2,76 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About | Silver Crest Estates</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the spirit of Silver Crest Estates, a mountain ranch reimagined for meaningful gatherings.">
+  <title>Our Story | Silver Crest Estates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="images/silver-crest-mark.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Silver Crest Estates home">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-name">Silver Crest <span>Estates</span></span>
+        </a>
+        <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation">
+        <label for="menu-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active" aria-current="page">Our story</a></li>
+          <li><a href="events.html">Gatherings</a></li>
+          <li><a href="spaces.html">The estate</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Plan your visit <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <div class="container">
-    <nav>
-      <div class="logo">Silver Crest Estates</div>
+  <main id="main-content">
+    <section class="page-hero about-hero" aria-labelledby="page-heading">
+      <div class="page-hero-shade"></div>
+      <div class="container page-hero-content">
+        <p class="eyebrow eyebrow-light"><span></span> A sense of place</p>
+        <h1 id="page-heading">Rooted in nature.<br><em>Made for coming together.</em></h1>
+        <p>A mountain ranch reimagined as a place to find your people, slow down, and stay awhile.</p>
+      </div>
+    </section>
 
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="hamburger">
-        <span></span><span></span><span></span>
-      </label>
+    <section class="story-section section-pad" aria-labelledby="story-heading">
+      <div class="container story-grid">
+        <div class="story-image-wrap">
+          <img src="images/Hiking Trail.png" alt="A peaceful trail winding through the trees around the estate">
+          <span class="image-note">Take the long way around</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Our story</p>
+          <h2 id="story-heading">Some places invite you to <em>stay.</em></h2>
+          <p>Silver Crest Estates brings the warmth of a mountain ranch together with the thoughtful details of a welcoming retreat. Here, pines frame the horizon, the pace softens, and there's room for everyone to feel at home.</p>
+          <p>From the first hello to the last dance, our favorite part is seeing a place become part of someone's story. That feeling is at the heart of everything we do.</p>
+          <a href="spaces.html" class="text-link">Find your favorite corner <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
 
-      <ul id="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="spaces.html">The Estate</a></li>
-        <li><a href="index.html#contact">Booking</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <section class="values-section section-pad" aria-labelledby="values-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> What matters here</p>
+            <h2 id="values-heading">A thoughtful kind of welcome.</h2>
+          </div>
+          <p class="section-heading-note">The best gatherings feel effortless. We make space for the details, and for the moments in between.</p>
+        </div>
+        <div class="values-grid">
+          <article class="value-card">
+            <span class="value-number">01</span>
+            <h3>Honor the setting</h3>
+            <p>Let the land, the light, and the mountain air do what they do best: bring everyone back to the moment.</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number">02</span>
+            <h3>Make room for connection</h3>
+            <p>Spaces for a joyful crowd, a fireside conversation, and all the little encounters in between.</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number">03</span>
+            <h3>Leave with a story</h3>
+            <p>We believe the most meaningful gatherings feel personal, unhurried, and entirely your own.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<main class="container">
+    <section class="closing-cta section-pad">
+      <div class="container closing-cta-inner">
+        <div>
+          <p class="eyebrow eyebrow-light"><span></span> A place for your people</p>
+          <h2>Come see what<br>you can <em>make here.</em></h2>
+        </div>
+        <a href="index.html#contact" class="button button-light">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-  <article>
-    <h1>About Silver Crest Estates</h1>
-
-    <p>Silver Crest Estates is a historic mountain ranch reimagined as an elegant destination for weddings and retreats.</p>
-
-    <h2>Our Story</h2>
-
-    <div class="story-centered">
-      <img src="images/Hiking Trail.png" alt="Hiking trail" class="story-image">
-      <div class="story-text">
-        <p>Originally established in 1895...</p>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">Silver Crest <span>Estates</span></span>
+      </a>
+      <p>A little closer to what matters.</p>
+      <div class="footer-links">
+        <a href="about.html">Our story</a>
+        <a href="events.html">Gatherings</a>
+        <a href="spaces.html">The estate</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms &amp; conditions</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+      <div class="footer-social">
+        <span>Follow along</span>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
       </div>
     </div>
-
-    <h2>Our Mission</h2>
-
-    <ul class="mission-list">
-      <li>Honoring legacy and land</li>
-      <li>Creating meaningful experiences</li>
-      <li>Supporting connection</li>
-      <li>Environmental stewardship</li>
-    </ul>
-
-  </article>
-
-</main>
-
-<footer>
-  <div class="container">
-    <div class="footer-links">
-      <a href="https://www.instagram.com" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      <a href="https://www.twitter.com" target="_blank">X (Twitter)</a>
+    <div class="container footer-bottom">
+      <span>© 2026 Jasmine Mathisen</span>
+      <span>Silver Crest Estates is a fictional venue concept created for portfolio purposes.</span>
     </div>
-    <p>&copy; 2025 Silver Crest Estates. All rights reserved.</p>
-  </div>
-  <a href="#top" id="back-to-top">Back to top</a>
-</footer>
-
+  </footer>
+  <a class="back-to-top-button" href="#top"><span aria-hidden="true">↑</span><span>Back to top</span></a>
 </body>
 </html>
-
-

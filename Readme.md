@@ -1,128 +1,30 @@
-# Silver Crest Estates — Event Venue Website
+# Silver Crest Estates
 
-A multi‑page, fully responsive event venue website designed to showcase the spaces, services, and event offerings at **Silver Crest Estates**.  
-This project demonstrates core HTML and CSS skills, including semantic structure, responsive design, navigation systems, forms, tables, and layout techniques.
+A responsive, multi-page website concept for a mountain event estate. The design pairs immersive venue photography with an editorial visual identity, considered typography, and a navy, coral, and fuchsia palette.
 
----
+Created by **Jasmine Mathisen**.
 
-## 📄 Pages Included
+## Pages
 
-### **1. Home — `index.html`**
-- Introduction to the venue  
-- Featured events  
-- Sample pricing table  
-- Booking inquiry form  
-- Hero section with background image  
-- Internal anchor link to the contact form  
+- **Home** — brand introduction, gathering highlights, and booking inquiry form
+- **Our story** — the estate's character and guiding values
+- **Gatherings** — event calendar and the occasions the venue hosts
+- **The estate** — a photo gallery of the venue's event and guest spaces
+- **Privacy policy** — explains this demo's information handling and third-party assets
+- **Terms & conditions** — explains the demo site's use and sample-content limitations
 
-### **2. About — `about.html`**
-- History of the estate  
-- Mission statement  
-- Story section with image  
-- Semantic structure using `<article>`, `<section>`, and headings  
+## Built with
 
-### **3. Events — `events.html`**
-- Monthly event schedule presented in a table  
-- Event types list  
-- Call‑to‑action button linking to booking  
-- Scroll‑fade image section  
+- Semantic HTML
+- CSS custom properties, Grid, and Flexbox
+- Responsive CSS-only navigation
+- Keyboard skip links and a custom SVG favicon
+- Google Fonts (DM Sans and Playfair Display), with system-font fallbacks
+- Font Awesome social media icons
+- Local photography in `images/`
 
-### **4. The Estate — `spaces.html`**
-- Gallery-style grid of venue spaces  
-- Hover overlays for descriptions  
-- Responsive CSS Grid layout  
-- Hero banner with call‑to‑action  
+## View locally
 
----
+Open `index.html` in a modern browser. No build step or package installation is required.
 
-## 🎨 Features & Requirements Implemented
-
-### **Semantic HTML**
-- Proper use of `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>`
-- Accessible alt text for all images
-- Organized headings (H1–H3)
-
-### **Navigation**
-- Fully responsive navigation bar  
-- CSS‑only hamburger menu (no JavaScript)  
-- Consistent across all pages  
-
-### **Forms**
-- Contact/booking form with:
-  - Text input  
-  - Email input  
-  - Textarea  
-  - Submit button  
-
-### **Tables**
-- Event schedule table  
-- Pricing table on the home page  
-
-### **Images*
- Image format (`.png`)  
-- Hero backgrounds  
-- Gallery cards  
-
-### **CSS Styling**
-- External stylesheet (`styles.css`)  
-- Flexbox and CSS Grid layouts  
-- Hover and focus states  
-- Buttons with transitions  
-- Background images and gradients  
-- Responsive breakpoints for tablet and mobile  
-
-### **Bonus Features**
-- Back‑to‑top button  
-- Sticky header  
-- Smooth scrolling  
-- AOS‑style scroll fade (CSS‑only version)  
-
----
-
-## 📁 Project Structure
-
-project-folder/
-│
-├── index.html
-├── about.html
-├── events.html
-├── spaces.html
-├── styles.css
-│
-└── images/
-├── Great-Hall.png
-├── LakeView-Room.png
-├── Lodge_Lounge.png
-├── Luxary-Cabin.png
-├── Smaller-Cabins.png
-
-
----
-
-## 🚀 How to View the Project
-
-1. Download or clone the project folder  
-2. Open **index.html** in any modern web browser  
-3. Navigate using the menu or hamburger icon on mobile  
-
-No server setup or JavaScript required.
-
----
-
-## 🛠️ Technologies Used
-
-- **HTML**
-- **CSS**
-- **Flexbox**
-- **CSS Grid**
-- **Responsive Design**
-- **CSS‑only Hamburger Menu**
-
----
-
-## 📬 Contact
-
-Created by **Jasmine** as part of a web development project.  
-This site is designed to demonstrate clean structure, responsive design, and modern layout techniques.
-
-
+The event schedule is sample content. The inquiry form is a front-end concept and needs a form service or backend integration before it can deliver submissions. Replace the social media links with your profile URLs before publishing. The policy pages are portfolio-project templates, not legal advice; review them for your actual business and jurisdiction before launch.
